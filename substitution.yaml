@@ -1,0 +1,38 @@
+pj1:
+  - dir: dir1
+    template: db.conf.tmpl
+    substitution:
+      port: 80
+      dbname: test
+      user: postgres
+      password: postgres
+  - dir: dir2/dir3
+    template: web.conf.tmpl
+    substitution:
+       port: 82
+  - dir: dir2/dir3
+    template: db.conf.tmpl
+    substitution:
+      port: 80
+      dbname: test
+      user: postgres
+      password: postgres
+pj2:
+  - dir: dir1
+    template: db.conf.tmpl
+    substitution:
+      port: 80
+      dbname: test
+      user: postgres
+      password: postgres
+  - dir: dir2/dir3
+    template: web.conf.tmpl
+    substitution:
+       port: 82
+  - dir: dir2/dir3
+    template: db.conf.tmpl
+    substitution:
+      port: 80
+      dbname: test
+      user: postgres
+      password: postgres
